@@ -17,6 +17,10 @@ class PostServiceManager {
         return posts.count
     }
     
+    func getPost(index: Int) -> Post {
+        return posts[index]
+    }
+    
     func getPost(id: Int) -> Post? {
         return posts.first(where: { $0.id == id })
     }
